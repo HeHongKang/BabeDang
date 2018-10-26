@@ -1,0 +1,67 @@
+/*mheader*/
+.mheader{
+	margin-top: 0.88rem;
+	position: fixed;
+	width: 92%;
+	background: #e6e6e6;
+	height: 0.58rem;
+	padding: 0.15rem 4%;
+	z-index: 100;
+}
+.mheader_search{
+	width: 90%;
+	vertical-align: middle;
+	border-radius: 0.06rem;
+	background: #fff url(../images/search_ico.png) left center no-repeat;
+	background-size:0.58rem 0.28rem ;
+	border: none;
+	outline: none;
+	padding: 0.15rem 5%;
+	font-size: 0.28rem;
+	text-align:center;
+}
+
+/*declare_index*/
+.declare_index{
+	margin-top: 1.76rem;
+	width: 100%;
+	float: left;
+}
+
+.ye_line {
+	width: 90%;
+	padding: 0.2rem 5%;
+	background: #fff;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	margin-bottom: 0.1rem;
+}
+
+.ye_line_left {
+	float: left;
+	height: 0.4rem;
+	width: auto;
+}
+
+.ye_line_left img{
+	width: 0.3rem;
+	height: 0.3rem;
+	vertical-align: middle;
+	margin-bottom: 0.04rem;	
+}
+.day_line{
+	padding: 0 0.25rem;
+}
+
+.ye_line font {
+	font-size: 0.28rem;
+	color: #4c4c4c
+}
+
+.ye_line_right {
+	float: right;
+	width: 1.6rem;
+	height: 0.4rem;
+	text-align: right;
+}
+

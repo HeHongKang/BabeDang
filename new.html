@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="applicable-device" content="mobile" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<title></title>
+	<link rel="stylesheet" href="css/public_head.css" />
+	<link rel="stylesheet" href="css/new.css" />
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/phone.js"></script>
+</head>
+
+<body>
+	<!--head_line-->
+	<div class="head_line">
+		<!--<span class="head_left"><a href="#"><img src="images/back_ico.png"></a></span>-->
+		<span onclick="window.location.href='index.html'" class="head_left"><a href="#"><img src="images/back_ico.png"></a></span>
+		<p class="head_line_p">
+			新建
+		</p>
+		<!--<span class="head_right"><a href="#"><img src="images/add_ico.png"></a></span>-->
+	</div>
+	<div class="new_index">
+		<div class="wd_title">
+			<img src="images/wd_ico.png">网点信息
+		</div>
+
+		<div class="wd_index">
+
+			<div class="wd_line">
+				<img src="images/sh_info_ico.png">
+				<input type="text" class="line_input" placeholder="商户信息">
+			</div>
+
+			<div class="wd_line">
+				<img src="images/shdz_ico.png">
+				<input type="text" class="line_input" placeholder="商户地址">
+			</div>
+
+			<div class="wd_line">
+				<img src="images/lxr_ico.png">
+				<input type="text" class="line_input" placeholder="联系人">
+			</div>
+
+			<div class="wd_line">
+				<img src="images/lxdh_ico.png">
+				<input type="text" class="line_input" placeholder="联系电话">
+			</div>
+
+			<div class="wd_line">
+				<img src="images/bz_ico.png">
+				<textarea class="line_textarea" placeholder="备注信息"></textarea>
+			</div>
+
+			<div class="qy_index">
+				<div class="check_line">
+					<img src="images/qyyzf_ico.png">
+					<label for="check_yzf">是否需要签约翼支付：</label>
+					<span class="big_piaochecked">
+						<input type="checkbox" id="check_yzf" name="check_big" class="radioclass_big" onclick="check(this)" />
+					</span>
+				</div>
+
+				<div id="check_show">
+					<table class="check_table">
+						<tr>
+							<td>
+								<span class="piaochecked">
+									<input type="checkbox" id="small_check_1" name="check_choice" class="radioclass_small" />
+								</span>
+								<label for="small_check_1">个体商户</label></td>
+							<td>
+								<span class="piaochecked">
+									<input type="checkbox" id="small_check_2" name="check_choice" class="radioclass_small" />
+								</span>
+								<label for="small_check_2">公司商户</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="piaochecked">
+									<input type="checkbox" id="small_check_3" name="check_choice" class="radioclass_small" />
+								</span>
+								<label for="small_check_3">连锁商户</label></td>
+							</td>
+							<td>
+								<span class="piaochecked">
+									<input type="checkbox" id="small_check_4" name="check_choice" class="radioclass_small" />
+								</span>
+								<label for="small_check_4">扫码枪及收银系统</label></td>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="check_line">
+					<img src="images/tp_ico.png">
+					<font>现场照片</font>
+				</div>
+
+				<div class="images_save">
+					<div class="img_square">
+						<img src="images/pics.png">
+					</div>
+					<div class="img_square">
+						<img src="images/add_pic.png">
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="btn_line">
+				<input type="submit" onclick="alert('提交个毛线,你怕是个傻子呦!')" class="bottom_btn" value="立即提交">
+			</div>
+
+
+		</div>
+
+	</div>
+	<!--是否签约js-->
+	<script>
+		function check(obj) {
+			if (obj.checked) {
+				$("#check_show").show();
+			} else {
+				$("#check_show").hide();
+			}
+		}
+	</script>
+
+	<!--多选js_big-->
+	<script>
+		$(".big_piaochecked").on("click", function () {
+			$(this).hasClass("on_check_big") ? $(this).removeClass("on_check_big") : $(this).addClass("on_check_big");
+		})
+	</script>
+	<!--多选js_small-->
+	<script>
+		$(".piaochecked").on("click", function () {
+			$(this).hasClass("on_check") ? $(this).removeClass("on_check") : $(this).addClass("on_check");
+		})
+	</script>
+
+</body>
+
+</html>
